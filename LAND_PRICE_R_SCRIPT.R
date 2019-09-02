@@ -1500,13 +1500,6 @@ writeOGR(shp, "/path/to/files/", "filename2")
 
 
 
-
-
-
-
-
-
-
 est_map <- get_map("estonia", color="bw", zoom = 7)
 ?register_google
 
@@ -1558,13 +1551,6 @@ NLD <- join(NLD,NLD_prov_latlong@data, by = 'id')
 ggmap(base_map) + geom_polygon(data = GRAND_MAP_PROFIT,aes(x = long,y = lat, group = group, fill = population),alpha=0.5)
 
 
-
-
-
-
-
-
-
 ggplot()+
   geom_sf(data = HIIU, colour="grey")+
   geom_sf(data = GRAND_MAP_PROFIT, aes(fill=AV_PR_M), colour="black")
@@ -1572,4 +1558,3 @@ ggplot()+
 ggplot()+
   geom_sf(data = HIIU, colour="grey")+
   geom_sf(data = GRAND_MAP_PROFIT, aes(colour = AV_PR_M), size=1) + scale_fill_gradientn(colours=c("khaki", "yellow", "red", "black"), labels=c(0, 1, 2, 3, 7), breaks=c(0, 1, 2, 3, 4))
-u  
